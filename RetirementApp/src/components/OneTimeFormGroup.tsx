@@ -27,6 +27,18 @@ const OneTimeFormGroup: React.FC<OneTimeExpenseForm> = ({
           type="number"
           error={!!errors.formGroups?.[index]?.age}
           helperText={errors.formGroups?.[index]?.age?.message}
+          sx={{
+            "& .MuiOutlinedInput-root": {
+              "&.Mui-focused fieldset": {
+                borderColor: "#4f46e5",
+              },
+            },
+            "& .MuiInputLabel-root": {
+              "&.Mui-focused": {
+                color: "#4f46e5",
+              },
+            },
+          }}
         />
       </Grid>
       <Grid item xs={5}>
@@ -38,6 +50,18 @@ const OneTimeFormGroup: React.FC<OneTimeExpenseForm> = ({
           type="number"
           error={!!errors.formGroups?.[index]?.amount}
           helperText={errors.formGroups?.[index]?.amount?.message}
+          sx={{
+            "& .MuiOutlinedInput-root": {
+              "&.Mui-focused fieldset": {
+                borderColor: "#4f46e5",
+              },
+            },
+            "& .MuiInputLabel-root": {
+              "&.Mui-focused": {
+                color: "#4f46e5",
+              },
+            },
+          }}
         />
       </Grid>
       <Grid item xs={2} sx={{ display: "flex", alignItems: "center" }}>
