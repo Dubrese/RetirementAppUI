@@ -1,7 +1,12 @@
 import React from "react";
+import UserInputForm from "../components/UserInputForm";
 
 function HomePage() {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <UserInputForm />
+    </>
+  );
 }
 
 export default HomePage;
